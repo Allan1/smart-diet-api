@@ -1,0 +1,17 @@
+(1) EE = 3.9 · VO2 + 1.1 · VCO2
+where EE was measured in Kcals, VO2 was the total amount of oxygen consumed (in liters) for the trial, and VCO
+2 was the total amount of carbon dioxide produced (in liters) during the trial
+
+http://scholarworks.montana.edu/xmlui/bitstream/handle/1/1836/McKenzieJ0507.pdf?sequence=1
+http://fitness.stackexchange.com/questions/25472/how-to-calculate-calorie-from-pedometer
+http://fitness.stackexchange.com/questions/15608/energy-expenditure-calories-burned-equation-for-running
+http://www.livestrong.com/article/238020-how-to-convert-pedometer-steps-to-calories/
+
+
+G = GRADE
+V = VELOCITY = M . MIN^-1
+MT = TOTAL MASS = KG
+EEWALK = [(2.5 + 19.6 · G + 51.9 · G^2 – 76.8 · G^3 – 58.7 · G^4 + 280.8 · G^5).(V . 4186^-1) + 0.0175] .MT
+EEWALK = Kcal · Kg^-1 · min^-1
+
+EEGPS = EEWALK + ΔEEWIND
