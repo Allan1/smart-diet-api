@@ -33,7 +33,7 @@
     "public": false
   },
   "Account": {
-    "dataSource": "mysqlDS",
+    "dataSource": "postgresDS",
     "public": true
   }
 }
