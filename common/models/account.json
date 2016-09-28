@@ -7,12 +7,31 @@
     "validateUpsert": true,
     "mysql": {
       "table": "accounts"
+    },
+    "postgres": {
+      "table": "accounts"
     }
   },
   "properties": {
     "name": {
       "type": "string",
       "required": true
+    },
+    "weight": {
+      "type": "number",
+      "required": false,
+      "dataPrecision": 5,
+      "dataScale": 2
+    },
+    "height": {
+      "type": "number",
+      "required": false,
+      "dataPrecision": 3,
+      "dataScale": 2
+    },
+    "birth": {
+      "type": "date",
+      "required": false
     }
   },
   "validations": [],
