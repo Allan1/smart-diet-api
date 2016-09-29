@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS accounts (
+  id INT PRIMARY KEY,
+  username VARCHAR(45) NOT NULL,
+  name VARCHAR(45) NOT NULL,
+  password VARCHAR(256) NOT NULL,
+  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  lastUpdated TIMESTAMP NULL,
+  status VARCHAR(512) NULL,
+  verificationToken VARCHAR(512) NULL,
+  emailVerified boolean NULL,
+  email VARCHAR(45) NOT NULL,
+  realm VARCHAR(512) NULL,
+  credentials TEXT NULL,
+  challenges TEXT NULL,
+  modified TIMESTAMP NULL,
+  weight DECIMAL NULL,
+  height DECIMAL NULL,
+  age integer NULL,
+  UNIQUE (username),
+  UNIQUE (email)
+)
