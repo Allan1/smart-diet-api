@@ -1,0 +1,10 @@
+"mysqlDS": {
+  "host": "localhost",
+  "port": 3306,
+  "url": "",
+  "database": "smartdiet",
+  "password": "root",
+  "name": "mysqlDS",
+  "user": "root",
+  "connector": "mysql"
+},

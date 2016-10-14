@@ -12,6 +12,6 @@
     "user": "rbcrlexkudmxur",
     "username": "rbcrlexkudmxur",
     "password": "bpyL__17adVJz3-swQ_-O-xx25",
-    "url": "postgres://rbcrlexkudmxur:bpyL__17adVJz3-swQ_-O-xx25@ec2-50-17-220-39.compute-1.amazonaws.com:5432/ddjvs9lp67afpj"
+    "url": "postgres://rbcrlexkudmxur:bpyL__17adVJz3-swQ_-O-xx25@ec2-50-17-220-39.compute-1.amazonaws.com:5432/ddjvs9lp67afpj?ssl=true"
   }
 }

@@ -15,3 +15,16 @@ EEWALK = [(2.5 + 19.6 · G + 51.9 · G^2 – 76.8 · G^3 – 58.7 · G^4 + 280.8
 EEWALK = Kcal · Kg^-1 · min^-1
 
 EEGPS = EEWALK + ΔEEWIND
+
+To convert VO2 in L/min to kcal/min on a mixed diet multiply L/min x 4.9
+
+
+Calculating caloric expenditure from VO2 is easy. Simply convert the client’s VO2 value to kilocalories (kcal) per minute. The VO2 value you are using must be in liters, however, and since the VO2 values calculated using the metabolic equations are in milliliters, you must convert them. Here’s how:
+
+1. Multiply the VO2 value in ml/kg/min by the client’s weight in kilograms. You will be left with a VO2 value in ml/min.
+
+2. Divide this value by 1,000 to convert VO2 to L/min.
+
+Once VO2 is in liters, you can calculate how many kcal clients are expending during exercise. For every liter of oxygen consumed, approximately 5 kcal are burned, so kcal can be determined from VO2 by using this conversion factor. Here’s a quick example:
+
+Your client is exercising at a VO2 of 2 L/min. Multiply 2 L/min by 5 kcal/L. Your client is burning 10 kcal/min. To get total kcal burned during exercise, simply multiply 10 by the total number of minutes of exercise. 

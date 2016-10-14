@@ -10,6 +10,17 @@ module.exports = function(Account) {
 	Account.prototype.getRecommendation = function (ctx,cb) {
     var account = this;
     console.log(this);
+    // var vo2 = 1;
+    // var kcal = vo2*4.9;
+    // var weight_intention = 'keep';
+    // switch (weight_intention){
+    //   case 'keep':
+    //   break;
+    //   case 'loose':
+    //   break;
+    //   case 'gain':
+    //   break;
+    // }
     var kcal_param = '&nutrition.ENERC_KCAL.min=200&nutrition.ENERC_KCAL.max=800';
 
     http.get(search_url+kcal_param,function (res) {
