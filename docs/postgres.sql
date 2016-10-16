@@ -1,5 +1,5 @@
-CREATE TABLE IF NOT EXISTS accounts (
-  id INT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS account (
+  id SERIAL PRIMARY KEY,
   username VARCHAR(45) NOT NULL,
   name VARCHAR(45) NOT NULL,
   password VARCHAR(256) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS accounts (
   modified TIMESTAMP NULL,
   weight DECIMAL NULL,
   height DECIMAL NULL,
-  age integer NULL,
+  birth DATE NULL,
   UNIQUE (username),
   UNIQUE (email)
 )

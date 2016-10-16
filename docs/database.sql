@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `smartdiet`.`accounts` (
   `modified` TIMESTAMP NULL,
   `weight` DECIMAL NULL,
   `height` DECIMAL NULL,
-  `age` TINYINT NULL,
+  `birth` DATE NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `username_UNIQUE` (`username` ASC))
 ENGINE = InnoDB
