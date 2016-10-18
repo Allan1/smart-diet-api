@@ -7,7 +7,7 @@ const util = require('util');
 
 module.exports = function(Account) {
 
-	Account.prototype.getRecommendation = function (ctx,kcal,cb) {
+	Account.prototype.getRecommendation = function (ctx,kcal,hourStr,cb) {
     var account = this;
     console.log(kcal);
     // var vo2 = 1;
@@ -21,7 +21,18 @@ module.exports = function(Account) {
     //   case 'gain':
     //   break;
     // }
-    var kcal_param = '&nutrition.ENERC_KCAL.min='+(kcal-200)+'&nutrition.ENERC_KCAL.max='+(kcal+200);
+    var hour = parseInt(hourStr); 
+    if (hour >= 18 ) {
+      var course = 'course^course-Main Dishes';
+    }
+    else if (hour >= 12) {
+      var course = 'course^course-Lunch';
+    }
+    else{
+      var course = 'course^course-Breakfast and Brunch';
+    }
+
+    var kcal_param = '&nutrition.ENERC_KCAL.min='+(kcal-200)+'&nutrition.ENERC_KCAL.max='+(kcal+200)+'&allowedCourse[]='+course;
 
     http.get(search_url+kcal_param,function (res) {
     	var body = '';
@@ -47,7 +58,8 @@ module.exports = function(Account) {
       description: 'Get recommendation for a given user',
       accepts: [
       	{ arg: 'ctx', type: 'object', http: { source:'context' } },
-        { arg: 'kcal', type: 'Number', https: { source:'query'}, required: true}
+        { arg: 'kcal', type: 'Number', https: { source:'query'}, required: true},
+        { arg: 'hour', type: 'Number', https: { source:'query'}, required: true}
       ],
       returns: {
         arg: 'data', type: ['object'], root: true
